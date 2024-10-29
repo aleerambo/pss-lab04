@@ -19,9 +19,9 @@ public class Cat {
       to the world in a single line of code.
      */
     public String Meow() {
-        return "Meow, meow, I am " + name + ", hear me purr, In this feline world," +
-        " I'm the star, that's for sure. With whiskers long and fur so sleek, I'm here" +
-        " to share my story, so take a peek!";
+        return "Meow, meow, I am " + name + ", hear me purr, In this feline world,"
+        + " I'm the star, that's for sure. With whiskers long and fur so sleek, I'm here"
+        + " to share my story, so take a peek!";
     }
     
     public void setColor(String color) {
