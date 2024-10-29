@@ -18,6 +18,6 @@ public class Kangaroo implements Animal {
     }
 
     public boolean canEat(Animal a) {
-        return this.canEatVegetables && a.averageWeight() < this.averageWeight;
+        return !this.canEatVegetables && a.averageWeight() < this.averageWeight;
     }
 }
