@@ -3,25 +3,21 @@ package it.unibo;
 public class Kangaroo implements Animal {
     private final double averageWeight;
     private final boolean canEatVegetables;
-    private final boolean canEat;
 
-    public Kangaroo(final double averageWeight, final boolean canEatVegetables, final boolean canEat){
-        this.
+    public Kangaroo(){
+        this.averageWeight = 55;
+        this.canEatVegetables = true;
     }
 
     public double averageWeight() {
-        return this.averageWeight = 55;
+        return this.averageWeight;
     }
 
     public boolean canEatVegetables() {
-        return this.canEatVegetables = true;
+        return this.canEatVegetables;
     }
 
     public boolean canEat(Animal a) {
-        if(this.averageWeight > a.averageWeight()){
-            return this.canEat = true;
-        }else {
-            return this.canEat = false;
-        }
+        return a.averageWeight() < this.averageWeight;
     }
 }
