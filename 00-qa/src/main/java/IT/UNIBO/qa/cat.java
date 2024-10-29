@@ -1,17 +1,17 @@
 package it.unibo.qa;
 
 public class Cat {
-    public static int numberOfLives = 9;
-    public String Name; 
-    public String Color;
-    public String Breed;
-    public int Age;
+    private static int numberOfLives = 9;
+    public String name; 
+    public String color;
+    public String breed;
+    public int age;
 
-    public Cat(final String Name, final String Color, final int Age, final String Breed) {
-        this.Name = Name;
-        this.Color = Color;
-        this.Age = Age;
-        this.Breed = Breed;
+    public Cat(final String name, final String color, final int age, final String breed) {
+        this.name = name;
+        this.color = color;
+        this.age = age;
+        this.breed = breed;
     }
 
     /*
@@ -19,21 +19,21 @@ public class Cat {
       to the world in a single line of code.
      */
     public String Meow() {
-        return "Meow, meow, I am " + Name + ", hear me purr, In this feline world," +
+        return "Meow, meow, I am " + name + ", hear me purr, In this feline world," +
         " I'm the star, that's for sure. With whiskers long and fur so sleek, I'm here" +
         " to share my story, so take a peek!";
     }
     
-    public void setColor(String Color) {
-        this.Color = Color;
+    public void setColor(String color) {
+        this.color = color;
     }
 
     public String getColor() {
-        return this.Color;
+        return this.color;
     }
 
     public int hasSameColor(Cat cat) {
-        if (Color == cat.Color) {
+        if (color == cat.color) {
             return 1;
         }else{
             return 0;
@@ -41,11 +41,11 @@ public class Cat {
     }
 
     String getName() {
-        return this.Name;
+        return this.name;
     }
 
     String getBreed() {
-        return this.Breed;
+        return this.breed;
     }
 
     public static void main(String[] args) {
