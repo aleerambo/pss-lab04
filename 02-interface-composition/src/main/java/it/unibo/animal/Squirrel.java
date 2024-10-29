@@ -18,6 +18,6 @@ public class Squirrel implements Animal{
     }
 
     public boolean canEat(Animal a) {
-        return a.averageWeight() < this.averageWeight;
+        return this.canEatVegetables && a.averageWeight() < this.averageWeight;
     }
 }
