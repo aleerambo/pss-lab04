@@ -1,23 +1,23 @@
 package it.unibo;
 
 public class Squirrel implements Animal{
-    private double averageWeight;
-    private boolean canEatVegetables;
-    private boolean canEat;
+    private final double averageWeight;
+    private final boolean canEatVegetables;
+
+    public Squirrel(){
+        this.averageWeight = 0.5;
+        this.canEatVegetables = true;
+    }
 
     public double averageWeight() {
-        return this.averageWeight = 55;
+        return this.averageWeight;
     }
 
     public boolean canEatVegetables() {
-        return this.canEatVegetables = true;
+        return this.canEatVegetables;
     }
 
     public boolean canEat(Animal a) {
-        if(this.averageWeight > a.averageWeight()){
-            return this.canEat = true;
-        }else {
-            return this.canEat = false;
-        }
+        return a.averageWeight() < this.averageWeight;
     }
 }
