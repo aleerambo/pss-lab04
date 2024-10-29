@@ -1,4 +1,4 @@
-package IT.UNIBO.qa;
+package it.unibo.qa;
 
 public class Cat {
     public static int numberOfLives = 9;
