@@ -1,4 +1,4 @@
-package it.unibo;
+package it.unibo.diet;
 
 public interface Diet {
     
