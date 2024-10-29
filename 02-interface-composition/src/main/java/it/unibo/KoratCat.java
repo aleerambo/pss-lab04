@@ -1,5 +1,5 @@
 package it.unibo;
 
-public class KoratCat {
+public class KoratCat implements Animal{
     
 }
