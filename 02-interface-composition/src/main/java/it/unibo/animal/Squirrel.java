@@ -1,23 +1,23 @@
 package it.unibo.animal;
 
+import it.unibo.diet.*;
+
 public class Squirrel implements Animal{
-    private final double averageWeight;
-    private final boolean canEatVegetables;
+    private final Diet diet;
 
     public Squirrel(){
-        this.averageWeight = 0.5;
-        this.canEatVegetables = true;
+        diet = new Herbivore();
     }
 
     public double averageWeight() {
-        return this.averageWeight;
+        return 0.5;
     }
 
     public boolean canEatVegetables() {
-        return this.canEatVegetables;
+        return this.diet.isHerbivore();
     }
 
     public boolean canEat(Animal a) {
-        return !this.canEatVegetables && a.averageWeight() < this.averageWeight;
+        return this.diet.isCarnivore() && (a.averageWeight() < this.averageWeight());
     }
 }

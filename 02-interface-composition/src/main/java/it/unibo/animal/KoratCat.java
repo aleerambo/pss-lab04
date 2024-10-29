@@ -1,23 +1,23 @@
 package it.unibo.animal;
 
+import it.unibo.diet.*;
+
 public class KoratCat implements Animal{
-    private final double averageWeight;
-    private final boolean canEatVegetables;
+    private final Diet diet;
 
     public KoratCat(){
-        this.averageWeight = 4;
-        this.canEatVegetables = false;
+        diet = new Carnivore();
     }
 
     public double averageWeight() {
-        return this.averageWeight;
+        return 4.0;
     }
 
     public boolean canEatVegetables() {
-        return this.canEatVegetables;
+        return this.diet.isHerbivore();
     }
 
     public boolean canEat(Animal a) {
-        return !this.canEatVegetables && a.averageWeight() < this.averageWeight;
+        return this.diet.isCarnivore() && (a.averageWeight() < this.averageWeight());
     }
 }
