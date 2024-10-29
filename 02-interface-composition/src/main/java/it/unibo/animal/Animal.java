@@ -1,4 +1,4 @@
-package it.unibo;
+package it.unibo.animal;
 
 public interface Animal {
     double averageWeight();

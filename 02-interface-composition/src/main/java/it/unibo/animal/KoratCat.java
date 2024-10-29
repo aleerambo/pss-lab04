@@ -1,4 +1,4 @@
-package it.unibo;
+package it.unibo.animal;
 
 public class KoratCat implements Animal{
     private final double averageWeight;

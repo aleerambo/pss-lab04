@@ -1,12 +1,12 @@
-package it.unibo;
+package it.unibo.animal;
 
-public class Squirrel implements Animal{
+public class SiameseCat implements Animal {
     private final double averageWeight;
     private final boolean canEatVegetables;
 
-    public Squirrel(){
-        this.averageWeight = 0.5;
-        this.canEatVegetables = true;
+    public SiameseCat(){
+        this.averageWeight = 4;
+        this.canEatVegetables = false;
     }
 
     public double averageWeight() {
